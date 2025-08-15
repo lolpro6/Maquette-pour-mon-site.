@@ -1,0 +1,101 @@
+<!doctype html>
+<meta name="description" content="Site vitrine professionnel pour petites entreprises." />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="container nav">
+<div class="logo">Nom de l’entreprise</div>
+<nav class="menu">
+<a href="#services">Services</a>
+<a href="#avis">Avis</a>
+<a href="#contact" class="btn">Contact</a>
+</nav>
+</header>
+
+
+<section class="hero" role="banner" aria-label="Section de bienvenue">
+<div class="overlay"></div>
+<div class="container hero-inner">
+<h1>Votre solution locale, claire et rapide</h1>
+<p>Nous aidons les particuliers et petites entreprises avec des services de qualité au prix juste.</p>
+<a href="#contact" class="btn btn-primary">Demander un devis</a>
+</div>
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="Équipe au travail" class="hero-bg" />
+</section>
+
+
+<section id="services" class="container grid-3 gap-xl pad-y">
+<article class="card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Service 1" />
+<h3>Service 1</h3>
+<p>Brève description du service 1. Résultat concret et bénéfice client.</p>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop" alt="Service 2" />
+<h3>Service 2</h3>
+<p>Brève description du service 2. Résultat concret et bénéfice client.</p>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Service 3" />
+<h3>Service 3</h3>
+<p>Brève description du service 3. Résultat concret et bénéfice client.</p>
+</article>
+</section>
+
+
+<section class="cta">
+<div class="container cta-inner">
+<h2>Un projet ? Parlons-en.</h2>
+<p>Réponse sous 24h. Devis gratuit et sans engagement.</p>
+<a href="#contact" class="btn btn-secondary">Contact rapide</a>
+</div>
+</section>
+
+
+<section id="avis" class="container grid-3 gap-lg pad-y">
+<blockquote class="quote">
+<p>“Prestation impeccable, je recommande.”</p>
+<cite>— Client A</cite>
+</blockquote>
+<blockquote class="quote">
+<p>“Rapide et efficace, prix correct.”</p>
+<cite>— Client B</cite>
+</blockquote>
+<blockquote class="quote">
+<p>“Très pro du début à la fin.”</p>
+<cite>— Client C</cite>
+</blockquote>
+</section>
+
+
+<section id="contact" class="container pad-y">
+<h2>Contact</h2>
+<form class="form" action="#" method="post">
+<label>Nom<input type="text" name="name" required></label>
+<label>Email<input type="email" name="email" required></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn btn-primary" type="submit">Envoyer</button>
+</form>
+<div class="contact-details">
+<p><strong>Téléphone :</strong> 06 68 85 38 99</p>
+<p><strong>Email :</strong> ilyes.rouani@gmail.com</p>
+<p><strong>Adresse :</strong> 10 rue Exemple, 75000 Paris</p>
+</div>
+</section>
+
+
+<footer class="footer">
+<div class="container footer-inner">
+<p>© <span id="year"></span> Nom de l’entreprise. Tous droits réservés.</p>
+<a href="#" aria-label="Mentions légales">Mentions légales</a>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
